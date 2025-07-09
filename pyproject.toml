@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "alicia"
+version = "0.1.0"
+description = ""
+authors = ["Victor Seifert <Victor.Seifert@alexanderthamm.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+speechrecognition = "^3.14.3"
+pyaudio = "^0.2.14"
+pyttsx3 = "^2.99"
+openai = "^1.93.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
