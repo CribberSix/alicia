@@ -42,10 +42,7 @@ def speak_text(text):
 
 def ask_chatgpt(question, model="gpt-4o"):
     client = OpenAI(
-        # This is the default and can be omitted
-        # api_key=os.getenv("OPENAI_API_KEY"),
-        api_key="sk-proj-D9Ka3tML39v_7U99sbwQIJnLcEttLIKzFYLmX8zN_v5mSEN7wH0OenDbz0HxixcEYzHeSdeaDUT3BlbkF"
-                "J6r1aHiVm26_-0FjX4LCmdN1FZdtpcs5V4F_FD6TdW3H2sBsNqn-AikX1BFoM-EVAWjS5XnFI8A"
+        api_key=os.getenv("OPENAI_API_KEY"),
     )
     response = client.responses.create(
         model=model,
